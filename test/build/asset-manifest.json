@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fe893ed5.css",
+    "main.js": "./static/js/main.ed8cf877.js",
+    "static/js/453.9c81923e.chunk.js": "./static/js/453.9c81923e.chunk.js",
+    "static/media/service.svg": "./static/media/service.e8ffe74eacd2f26538be.svg",
+    "static/media/garazh.svg": "./static/media/garazh.49ad91354fb00ddf5feb.svg",
+    "static/media/rukovodstvo.svg": "./static/media/rukovodstvo.99bd25efbb13754a2a12.svg",
+    "index.html": "./index.html",
+    "main.fe893ed5.css.map": "./static/css/main.fe893ed5.css.map",
+    "main.ed8cf877.js.map": "./static/js/main.ed8cf877.js.map",
+    "453.9c81923e.chunk.js.map": "./static/js/453.9c81923e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe893ed5.css",
+    "static/js/main.ed8cf877.js"
+  ]
+}
