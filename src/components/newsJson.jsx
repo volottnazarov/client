@@ -7,7 +7,7 @@ function NewsJson() {
         let newsArr = [];
 
         const callBackendAPI = async () => {
-            const response = await fetch('/serverGarage/data/news');
+            const response = await fetch('/serverGarage/data/news.js');
             const newsNotes = await response.json();
             newsNotes.map(elem => newsArr.push(elem))
             setNews(newsArr);
