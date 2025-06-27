@@ -41,6 +41,5 @@
   },
   "devDependencies": {
     "ajv": "^7.2.4"
-  },
-  "proxy": "https://volottnazarov.github.io"
+  }
 }
