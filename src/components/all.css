@@ -233,7 +233,7 @@ ul, li {
 }
 @media (max-width: 767px){
     body {
-        max-width: 375px;
+        max-width: 390px;
     }
 
     .title {
