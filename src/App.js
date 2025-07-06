@@ -5,7 +5,7 @@ import Info from './components/info';
 import Mechanic from './components/mechanic';
 import HomePage from './components/homepage';
 import Menu from './components/menu';
-import Authorization from './components/authorization';
+// import Authorization from './components/authorization';
 
 function App() {
   return (
