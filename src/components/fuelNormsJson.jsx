@@ -7,9 +7,9 @@ function FuelNormsJson() {
     let normsArr = [];
 
     const callBackendFuelAPI = async () => {
-        const response = await fetch('/fuel');
+        const response = await fetch('https://volottnazarov.github.io/serverGarage/data/fuelBaseNorm.json');
         const normsNotes = await response.json();
-        normsNotes.map(elem => normsArr.push(elem))
+        normsNotes.fuel.map(elem => normsArr.push(elem))
         setNorms(normsArr);
 
         if (response.status !== 200) {

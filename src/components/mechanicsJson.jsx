@@ -7,9 +7,10 @@ function MechanicsJson() {
         let mechanicsArr = [];
 
         const callBackendAPI = async () => {
-            const response = await fetch('/mechanics');
+            const response = await fetch('https://volottnazarov.github.io/serverGarage/data/mechanics.json');
             const mechanics = await response.json();
-            mechanics.map(elem => mechanicsArr.push(elem))
+            console.log(mechanics);
+            mechanics.mechanics.map(elem => mechanicsArr.push(elem));
             setMech(mechanicsArr);
 
             if (response.status !== 200) {

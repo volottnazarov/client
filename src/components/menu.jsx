@@ -88,7 +88,7 @@ export default function Menu() {
                     <MenuItem onClick={handleClose}><Link to={'/driver'}>Водителям</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to={'/mechanic'}>Механикам</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to={'/info'}>Справочник</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to={'/authorization'}>Авторизация</Link></MenuItem>
+                    {/* <MenuItem onClick={handleClose}><Link to={'/authorization'}>Авторизация</Link></MenuItem> */}
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

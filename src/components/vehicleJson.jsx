@@ -7,10 +7,9 @@ function VehicleJson() {
         let autoArr = [];
 
         const callBackendAPI = async () => {
-            const response = await fetch('/vehicles');
+            const response = await fetch('https://volottnazarov.github.io/serverGarage/data/dataVehicles.json');
             const body = await response.json();
-            console.log('Body:', body);
-            body.map(elem => autoArr.push(elem))
+            body.vehicles.map(elem => autoArr.push(elem))
             setAutos(autoArr);
 
             if (response.status !== 200) {

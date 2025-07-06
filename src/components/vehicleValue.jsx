@@ -26,7 +26,6 @@ function VehicleValue() {
     const viewDivGarageNum = viewGarageNum? '' : 'viewCss';
     const viewDivRelease = viewRelease? '' : 'viewCss';
     const viewDivService = viewService? '' : 'viewCss';
-    console.log(selectValue);
 
     const handleChange = (event) => {
         setSelectValue(event.target.value);

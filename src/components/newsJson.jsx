@@ -4,13 +4,16 @@ function NewsJson() {
 
     const [state, setState] = useState(null);
         const [news, setNews] = useState([]);
-        const url = "https://volottnazarov.github.io/serverGarage/data/news.js";
+        const url = "https://volottnazarov.github.io/serverGarage/data/news.json";
         let newsArr = [];
+
+        
 
         const callBackendAPI = async () => {
             const response = await fetch(url);
             const newsNotes = await response.json();
-            newsNotes.map(elem => newsArr.push(elem))
+            console.log('newsObg', newsNotes);
+            newsNotes.news.map(elem => newsArr.push(elem))
             setNews(newsArr);
 
             if (response.status !== 200) {

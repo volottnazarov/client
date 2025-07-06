@@ -54,9 +54,9 @@ export const MechanicList = () => {
         <div>
             <div onClick={changeView} className="hover cursorP color1">Дежурный по ремзоне:</div>
             <div className={`noView ${viewDiv}`}>
-                <button className="cursorP" onClick={() => setMechanic(mechManYesterday)}>Механик вчера</button>
-                <button className="cursorP" onClick={() => setMechanic(mechMan)}>Механик сегодня</button>
-                <button className="cursorP" onClick={() => setMechanic(mechManTomorrow)}>Механик завтра</button>
+                <button className="cursorP bgColor" onClick={() => setMechanic(mechManYesterday)}>Механик вчера</button>
+                <button className="cursorP bgColor" onClick={() => setMechanic(mechMan)}>Механик сегодня</button>
+                <button className="cursorP bgColor" onClick={() => setMechanic(mechManTomorrow)}>Механик завтра</button>
                 <h3>{mechanic}</h3>
                 <div className="cardMech">
                     <ul className="cardMechanic">{uniqueMechanicList.map(item =>

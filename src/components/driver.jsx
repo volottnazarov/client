@@ -28,10 +28,6 @@ function Driver() {
             <div>
                 <MechanicList />
             </div>
-            <div>
-                <p className="hover color1">Заявки на ремонт</p>
-                {/* <RequestForRepairs /> */}
-            </div>
             <div onClick={changeViewMemo} className="hover cursorP color1">Памятка водителю
                 <div className={`color3 cursorDef noView ${viewDivMemo}`}>
                     <p>Водитель обязан проверить перед выездом:</p>

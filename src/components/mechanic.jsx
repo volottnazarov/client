@@ -1,15 +1,26 @@
 ﻿import { MechanicList } from "./mechanicList";
 import "./all.css";
-import Request from "./request";
-
+import Fluids from "./fluids";
+import { useState } from "react";
 
 function Mechanic() {
+
+    const [viewFluids, setViewFluids] = useState(true);
+
+    const viewDivFluids = viewFluids? '' : 'viewCss';
+
+    const changeViewFluids = () => {
+        setViewFluids(!viewFluids);
+    }
+
     return (
         <div>
             <MechanicList />
-            <Request />
             <div>
-                <p>Техническая информация</p>
+                <p onClick={changeViewFluids} className="hover color1 cursorP">Техническая информация</p>
+                <div className={`noView ${viewDivFluids}`}>
+                    <Fluids />
+                </div>
             </div>
         </div>
     );

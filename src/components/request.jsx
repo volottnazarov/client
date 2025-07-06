@@ -2,7 +2,7 @@
 import "./all.css";
 
 function Request() {
-    
+
     const [view, setView] = useState(true); //всплывающее окно блока
     const changeView = () => {
         setView(!view);

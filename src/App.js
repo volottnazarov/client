@@ -18,7 +18,7 @@ function App() {
             <Route path='/driver' element={<Driver />} />
             <Route path='/mechanic' element={<Mechanic />} />
             <Route path='/info' element={<Info />} />
-            <Route path='/authorization' element={<Authorization/>} />
+            {/* <Route path='/authorization' element={<Authorization/>} /> */}
             <Route path="*" element={<h2>Ресурс не найден</h2>} />
           </Routes>
         </BrowserRouter>
